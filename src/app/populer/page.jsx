@@ -24,8 +24,6 @@ export default function Page() {
     <main>
       <Header title={`Anime Terpopuler #${page}`}/>
       <AnimeList api={topAnime}/>
-      {/* <Pagination page={page} lastPage={topAnime.pagination?.last_visible_page} setPage={setPage}/> */}
-      {/* <Paginat page={page} lastPage={topAnime.pagination?.last_visible_page} setPage={setPage}/> */}
       <Paginations page={page} lastPage={topAnime.pagination?.last_visible_page} setPage={setPage}/>
     </main>
   );
