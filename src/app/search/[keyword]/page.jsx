@@ -4,9 +4,12 @@ import AnimeList from "@/components/AnimeList";
 import Header from "@/components/AnimeList/Header";
 import Paginations from "@/components/Paginations";
 import { useEffect, useState } from "react";
+import { useParams } from "next/navigation";
 
 export default function Page({ params }) {
-  const { keyword } = params;
+  // const { keyword } = params;
+  const keyword = useParams().keyword
+  console.log(keyword)
   const decodedKeyword = decodeURI(keyword);
   const [page, setPage] = useState(1);
   const [searchAnime, setSearchAnime] = useState([]);

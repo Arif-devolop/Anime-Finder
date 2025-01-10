@@ -3,7 +3,8 @@ import AnimeList from "@/components/AnimeList";
 import Header from "@/components/AnimeList/Header";
 import AnimeDetails from "@/components/AnimeDetails";
 
-export default async function Page({ params: { id } }) {
+export default async function Page({ params}) {
+  const {id} = await params
   const anime = await getAnimeResponse(`anime/${id}/full`);
 
   let RecommendedAnime = await getNestedAnimeResponse(

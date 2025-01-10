@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <head>
       <meta name="google-site-verification" content="sgK21-O-reHWCFzHSIfmJx8u5awejouG6zoBKGRHrs8" />
       </head>
-      <body className={`${gabarito.className} bg-color-dark max-w-[1600px] flex flex-col mr-auto ml-auto`}>
+      <body className={`${gabarito.className} bg-color-dark max-w-[1600px] flex flex-col mr-auto ml-auto`} cz-shortcut-listen="true">
         <Navbar/>
         {children}
         <Footer/>

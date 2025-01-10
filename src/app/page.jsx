@@ -19,14 +19,14 @@ export default async function Page() {
         <Header title={'Paling Populer'} linkHref={'/populer'} linkTitle={'See All'} />
         <AnimeList api={topAnime} />
       </section>
-      <section>
+      <section className="pb-8">
         <Header title={'season upcoming'} linkHref={'/upcoming'} linkTitle={"See All"}/>
         <AnimeList api={upcomingSeasonAnime}/>
       </section>
-      <section className="pb-8">
+      {/* <section className="pb-8">
         <Header title={'Recent Recommend'}/>
         <AnimeList api={RecommendedAnime} />
-      </section>
+      </section> */}
     </>
   );
 }

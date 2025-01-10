@@ -56,7 +56,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://www.instagram.com/budi.arif.anto/"
+              href="https://www.instagram.com/arrifbudianto"
               target="blank"
               className="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-color-accent hover:bg-color-secondary"
             >
